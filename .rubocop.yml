@@ -1,0 +1,3 @@
+AllCops:
+  Exclude:
+    - 'milter_modify_from_header.rb'

@@ -1,0 +1,16 @@
+[Unit]
+Description=milter modify_from_header
+After=network.target
+
+[Service]
+User=ruby-milter
+Group=ruby-milter
+PIDFile=/run/milter_modify_from_header.pid
+ExecStart=milter_modify_from_header.rb start
+ExecStop=milter_modify_from_header.rb stop
+Restart=always
+Type=forking
+TimeoutStartSec=5
+
+[Install]
+WantedBy=multi-user.target

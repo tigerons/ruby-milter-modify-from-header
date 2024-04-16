@@ -1,0 +1,3 @@
+This only works when the message is addressed to one recipient.
+When there are several recipients postfix loggin "unexpected filter response SMFIR_CHGHEADER after event SMFIC_BODY."
+
